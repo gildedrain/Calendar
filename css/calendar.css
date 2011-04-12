@@ -1,0 +1,5 @@
+body {margin-top:40px;}
+#header {padding:15px 0 8px 0; margin:0 0 20px 0; border-top:1px solid #FFF; border-bottom:1px solid #000; background-color:#208cd9; background-image: -webkit-linear-gradient(#135382, #208cd9); background-image: -moz-linear-gradient(#135382, #208cd9); background-image: linear-gradient(#135382, #208cd9); background-image: -o-linear-gradient(#135382, #208cd9);}
+#header h2 {margin:0 0 0 170px; padding:15px 0 0 55px; background:transparent url(../images/calendar_icon.gif) no-repeat left top; height:32px; color:#FFF; text-shadow:0 2px 2px #000; -moz-text-shadow:0 2px 2px #000; -webkit-text-shadow:0 2px 2px #000;}
+th {color:#222;}
+
