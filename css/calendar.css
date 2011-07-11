@@ -2,4 +2,27 @@ body {margin-top:40px;}
 #header {padding:15px 0 8px 0; margin:0 0 20px 0; border-top:1px solid #FFF; border-bottom:1px solid #000; background-color:#208cd9; background-image: -webkit-linear-gradient(#135382, #208cd9); background-image: -moz-linear-gradient(#135382, #208cd9); background-image: linear-gradient(#135382, #208cd9); background-image: -o-linear-gradient(#135382, #208cd9);}
 #header h2 {margin:0 0 0 170px; padding:15px 0 0 55px; background:transparent url(../images/calendar_icon.gif) no-repeat left top; height:32px; color:#FFF; text-shadow:0 2px 2px #000; -moz-text-shadow:0 2px 2px #000; -webkit-text-shadow:0 2px 2px #000;}
 th {color:#222;}
-
+/* grid view header functions */
+#home .rsHeader {background-image:none !important; background-color:#333 !important; padding:5px !important;}
+#home .rsHeader .rsPrevDay {background-image:url(../images/prev.gif) !important; background-repeat:no-repeat !important; background-position:0 3px !important;}
+#home .rsHeader .rsNextDay {background-image:url(../images/next.gif) !important; background-repeat:no-repeat !important; background-position:0 3px !important;}
+#home .rsHeader .rsDatePickerActivator {background-image:url(../images/down.gif) !important; background-repeat:no-repeat !important; background-position:5px 10px !important;}
+.rsSelected {background-image:none !important; background:orange; border-radius:5px;}
+.rsSelected em {color:#000 !important; text-decoration:none !important;}
+.rsToday,.rsToday span,.rsHeaderDay,.rsHeaderDay span,.rsHeaderWeek, .rsHeaderWeek span,.rsHeaderMonth, .rsHeaderMonth span  {background-image:none !important; text-decoration:underline !important;}
+/* grid row height */
+.rsRow {height:200px !important;}
+/* hover bubble title bar */
+.rtTitlebar {font-weight:bold;}
+/* download and more buttons */
+.rtWrapperContent a {padding:3px; border-radius:5px; background:#1799fe; color:#FFF; border:1px solid #000; margin-right:.5em;}
+/* full event description view, display single ID */
+.WebEventDetail .title {font-size:2em; margin-bottom:.5em;}
+.WebEventDetail .starttime {font-weight:bold; background:#ffe; border-radius:5px 5px 0 0; border:1px solid #555; padding:1em; border-width:1px 1px 0 1px; margin-bottom:0;}
+.WebEventDetail .isrecurring {display:inline-block; clear:left; background:red; color:#fff; padding:5px; border-radius:10px; border:1px solid black; font-weight:normal;}
+.WebEventDetail .recurrenceinfo {background:#ffe; border:1px solid #555; border-width:0 1px 0 1px; padding:0 1em 0 1em; margin-top:-1em;}
+.WebEventDetail .daysofweek {display:none;}
+.WebEventDetail .enddate {display:block; margin:-1em 0 0 0;}
+.WebEventDetail .location {font-weight:bold; background:#ffe; border:1px solid #555; padding:1em; border-radius:0 0 5px 5px; border-width:0 1px 1px 1px; margin-bottom:1em;}
+.WebEventDetail .description {font-weight:bold; margin:0;}
+.WebEventDetail .innerdescription {font-weight:normal; line-height:1.4em;}
