@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="PublicCalendar" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="students.aspx.cs" Inherits="StudentsCalendar" %>
 
 <%@ Register Assembly="Ektron.Cms.Controls" Namespace="Ektron.Cms.Controls" TagPrefix="CMS" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -34,8 +34,16 @@
         <form id="form2" runat="server">
         <div class="container">
             <div id="section" runat="server" class="clearfix">
-                <CMS:WebCalendar ID="WebCalendar1" DefaultDisplayType="Month" runat="server">
-                </CMS:WebCalendar>
+                <div>
+                    <CMS:WebCalendar ID="WebCalendar1" DefaultDisplayType="Month" runat="server">
+                    </CMS:WebCalendar>
+                </div>
+                <%--                <CMS:WebCalendar ID="WebCalendar2" runat="server" DynamicParameter="calendar_id"
+                    DisplayType="Month">
+                    <DataSource>
+                        <CMS:CalendarDataSource sourceType="SystemCalendar" />
+                    </DataSource>
+                </CMS:WebCalendar>--%>
             </div>
         </div>
         </form>
