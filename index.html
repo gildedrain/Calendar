@@ -4,7 +4,8 @@
 <!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <title id="pageTitle" runat="server"></title>  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title id="pageTitle" runat="server"></title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <!-- GUI framework -->
@@ -14,57 +15,56 @@
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Sarina|PT+Mono|Open+Sans+Condensed:300,700,300italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800|Dancing+Script:400,700|Nothing+You+Could+Do|Devonshire|Rock+Salt' rel='stylesheet' type='text/css'>
   <link id="EktronRegisteredCss" rel="stylesheet" type="text/css" href="http://www.sunyocc.edu/workarea/csslib/ektronCss.ashx?id=EktronModalCss+WebCalendarViewCSS" />
   <link type="text/css" rel="stylesheet" href="css/calendar.css" media="all" />
-<script type="text/javascript" src="../occ_global/js/AC_RunActiveContent.js"> </script>
+  <script type="text/javascript" src="../gui/js/modernizr.js"></script>
 </head>
 <body id="home">
   <div id="top">
-    <div id="emergency">
-      <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
-    </div>
-    <div id="announcement">
-      <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
-    </div>
-    <div class="container">
-      <div id="occlogo"><a href="http://www.sunyocc.edu">Onondaga Community College</a></div>
-    </div>
-    <div id="occheaderbg" class="basic"></div><!-- header background -->
-    <div class="container">
-      <div class="headernav basic">
-        <div>
-          <p class="medium-blue uppercase tap-icon headernav-title">QuickLinks</p>
-          <ul>
-            <li><a href="#" class="white">Main Homepage</a></li>
-            <li><a href="#" class="light-blue">Current Students</a></li>
-            <li><a href="#" class="light-blue secure">Employees</a></li>
-            <li><a href="#" class="white">Maps + Directions</a></li>
-            <li><a href="#" class="white">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="formbox">
-          <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
-            <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <label for="search" class="hide">I'm looking for...</label>
-            <input id="search" name="q" class="searchbox" type="text" title="I'm looking for..." value="" /><input name="sa" class="submitbutton" type="submit" value="go" />
-          </form>
-          <p class="medium-grey uppercase">Top Searches</p>
-          <ul>
-            <li><a href="#" class="light-blue">Make a Payment</a></li>
-            <li><a href="#" class="light-blue">Financial Aid</a></li>
-            <li><a href="#" class="light-blue">Campus Map</a></li>
-            <li><a href="#" class="light-blue">Admission</a></li>
-            <li><a href="#" class="light-blue">Academic Calendar</a></li>
-          </ul>
+      <div id="emergency">
+        <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
+      </div>
+      <div id="announcement">
+        <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
+      </div>
+      <div class="container">
+        <div id="occlogo"><a href="http://www.sunyocc.edu">Onondaga Community College</a></div>
+      </div>
+      <div id="occheaderbg" class="basic js-drawer"></div><!-- header background -->
+      <div class="container">
+        <div class="headernav basic js-drawer">
+          <div>
+            <p class="medium-blue uppercase tap-icon headernav-title js-drawer-toggle">QuickLinks</p>
+            <ul>
+              <li><a href="#" class="white">Main Homepage</a></li>
+              <li><a href="#" class="light-blue">Current Students</a></li>
+              <li><a href="#" class="light-blue secure">Employees</a></li>
+              <li><a href="#" class="white">Maps + Directions</a></li>
+              <li><a href="#" class="white">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="formbox">
+            <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
+              <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />
+              <input type="hidden" name="cof" value="FORID:11" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <label for="search" class="hide">I'm looking for...</label>
+              <input id="search" name="q" class="searchbox  js-drawer-open-only" type="text" title="I'm looking for..." value="" /><input name="sa" class="submitbutton" type="submit" value="go" />
+            </form>
+            <p class="medium-grey">Top Searches</p>
+            <ul>
+              <li><a href="#" class="light-blue">Make a Payment</a></li>
+              <li><a href="#" class="light-blue">Financial Aid</a></li>
+              <li><a href="#" class="light-blue">Admission</a></li>
+              <li><a href="#" class="light-blue">Academic Calendar</a></li>
+            </ul>
+          </div>
+          <a href="#" class="close-headernav js-drawer-toggle">close</a>
+
         </div>
       </div>
     </div>
-  </div>
-
     <div class="container">
-      <h2 id="menutitle">Calendar</h2>
+      <!-- MENUTITLE H2 --><h2 id="menutitle">Calendar</h2>
     </div>
-
     <div id="main" role="main" class="clearfix">
       <!-- BEGIN COLGRID -->
 
@@ -1052,50 +1052,52 @@
     </div> <!-- // END #main -->
 
 
-<!-- BEGIN ADMISSION PREFOOTER -->
-    <div class="container prefooter">
-
+<p class="dots">&nbsp;</p>
+<!-- INCLUDE GLOBAL FOOTER -->
+<div id="occfooter">
+  <div class="container">
+    <p class="col3 logotext">Onondaga Community College</p>
+    <p class="col3 text tagline">Explore. Discover. <em>Transform</em>.</p>
+    <div class="col3">
+      <a class="question" href="#">Have a Question?</a>
+      <p>4585 West Seneca Turnpike<br />Syracuse, NY 13219<br />315.498.2622<br /><a href="mailto:occinfo@sunyocc.edu">occinfo@sunyocc.edu</a></p>
     </div>
-<!-- // END ADMISSION PREFOOTER -->
-
+    <div class="col1dot5">
+      <ul>
+        <li><a href="#">About the College</a></li>
+        <li><a href="#">Visit the Campus</a></li>
+        <li><a href="#">Maps &amp; Directions</a></li>
+        <li><a href="#">Extension Sites</a></li>
+        <li><a href="#">Hours of Operation</a></li>
+      </ul>
+    </div>
+    <div class="col1dot5">
+      <ul>
+        <li><a href="#">Employment Opportunities</a></li>
+        <li><a href="#">For the Media</a></li>
+        <li><a href="#">Event Space Available</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
     <p class="dots">&nbsp;</p>
-
-    <!-- INCLUDE GLOBAL FOOTER -->
-    <div id="occfooter">
-      <div class="container">
-        <h2 class="col3 logotext">Onondaga Community College</h2>
-        <h2 class="col3 text tagline">Explore. Discover. <em>Transform</em>.</h2>
-        <div class="col3">
-          <a class="question" href="#">Have a Question?</a>
-          <p>4585 West Seneca Turnpike<br />Syracuse, NY 13219<br />315.498.2622<br /><a href="mailto:occinfo@sunyocc.edu">occinfo@sunyocc.edu</a></p>
-        </div>
-        <div class="col1dot5">
-          <ul>
-            <li><a href="#">About the College</a></li>
-            <li><a href="#">Visit the Campus</a></li>
-            <li><a href="#">Maps &amp; Directions</a></li>
-            <li><a href="#">Extension Sites</a></li>
-            <li><a href="#">Hours of Operation</a></li>
-          </ul>
-        </div>
-        <div class="col1dot5">
-          <ul>
-            <li><a href="#">Employment Opportunities</a></li>
-            <li><a href="#">For the Media</a></li>
-            <li><a href="#">Event Space Available</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <p class="dots">&nbsp;</p>
-        <a href="#index" class="back-to-top">Top</a>
-      </div> <!-- end container -->
-    </div> <!-- end footer -->
+    <a href="#index" class="follow-me bottom-right back-to-top">Top</a>
+  </div> <!-- end container -->
+</div> <!-- end footer -->
 <!-- INCLUDE WWW SCRIPTS -->
-<script type="text/javascript" src="../gui/js/modernizr.js"> </script>
-<script type="text/javascript" src="../gui/js/jquery.js"> </script>
-<script type="text/javascript" src="../gui/js/jqueryui.js"> </script>
-<script type="text/javascript" src="../gui/js/tools.js"> </script>
-<script type="text/javascript" src="../occ_global/js/occ_tools.js"> </script>
-<script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"> </script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4758467-6']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script type="text/javascript" src="../gui/js/jquery.js"></script>
+    <script type="text/javascript" src="../gui/js/jqueryui.js"></script>
+    <script type="text/javascript" src="../gui/js/tools.js"></script>
+    <script type="text/javascript" src="../occ_global/js/occ_tools.js"></script>
+    <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
 </body>
 </html>
